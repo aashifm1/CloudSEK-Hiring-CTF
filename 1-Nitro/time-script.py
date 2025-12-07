@@ -18,8 +18,7 @@ def solve_once():
     html = r.text
     print("\n[RAW TASK HTML]\n", html)
 
-    # UNIVERSAL extraction:
-    # Find a sequence of alphanumeric characters between 6 and 64 chars
+    # Finding a sequence of alphanumeric characters between 6 and 64 chars
     m = re.search(r'input string:\s*([A-Za-z0-9+/=]+)', html)
     if not m:
         print("Could not find task string")
@@ -38,7 +37,7 @@ def solve_once():
     payload = f"CSK__{b64}__2025"
     print("[*] Payload:", payload)
 
-    # Try raw text POST (most likely correct)
+    # Try raw text POST 
     resp = session.post(
         BASE + "/submit",
         data=payload,
