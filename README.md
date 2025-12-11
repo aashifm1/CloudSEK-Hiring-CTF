@@ -7,10 +7,10 @@
 
 CloudSEK conducted a Capture The Flag (CTF) event featuring four challenges across two categories.
 
-### **Scripting**
+**1. Scripting**
 - **Nitro**
 
-### **Web**
+**2. Web**
 - **Bad Feedback**
 - **Triangle**
 - **Ticket**
